@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-/* Parent */
+
 .CTT {
     display: flex;
     align-items: center;
@@ -23,7 +23,6 @@
     box-sizing: border-box;
 }
 
-/* Common Style */
 .ctt-item {
     display: flex;
     flex-basis: auto;
@@ -43,7 +42,6 @@
     gap: 8px;
 }
 
-/* Flipkart */
 .flipkart {
     background: #ffe51f;
     width: 33%;
@@ -59,7 +57,6 @@
     font-style: italic;
 }
 
-/* Travel */
 .travel {
     width: 22%;
 }
@@ -69,8 +66,6 @@
     font-size: 28px;
 }
 
-/* Location */
-/* Location Box */
 .location {
     display: flex;
     align-items: center;
@@ -86,7 +81,6 @@
     background: #fff;
 }
 
-/* Left Side */
 .location-left {
     display: flex;
     align-items: center;
@@ -105,7 +99,6 @@
     white-space: nowrap;
 }
 
-/* Right Side */
 .location a {
     display: flex;
     align-items: center;
@@ -148,7 +141,6 @@
     box-sizing: border-box;
 }
 
-/* Search Box */
 
 .search-box {
     display: flex;
@@ -196,7 +188,6 @@
     color: #666;
 }
 
-/* Right Side */
 
 .nav-links {
     display: flex;
@@ -231,9 +222,6 @@
     font-size: 12px;
 }
 
-/* ===============================
-   Category Navigation
-================================== */
 
 .category-bar {
     position: sticky;
@@ -253,7 +241,6 @@
     background-color: #fff;
     /* Solid background */
     opacity: 1;
-    /* No transparency */
 
     border-top: 1px solid rgba(0, 0, 0, .16);
     border-bottom: 1px solid rgba(0, 0, 0, .16);
@@ -261,7 +248,6 @@
     box-sizing: border-box;
 }
 
-/* Category */
 
 .category {
     display: flex;
@@ -284,14 +270,12 @@
     color: #2874f0;
 }
 
-/* Icon */
 
 .category i {
     font-size: 28px;
     margin-bottom: 8px;
 }
 
-/* Text */
 
 .category span {
     font-size: 15px;
@@ -299,7 +283,7 @@
     white-space: nowrap;
 }
 
-/* Active Category */
+
 
 .category.active {
     font-weight: 600;
@@ -326,7 +310,6 @@
     border: 1px solid #e0e0e0;
 }
 
-/* Heading */
 
 .section-header {
     display: flex;
@@ -351,13 +334,9 @@
     border-radius: 2px;
 }
 
-
-/* ===========================
-   Tablet (992px)
-=========================== */
 @media (max-width: 992px){
 
-    /* Search */
+   
     .search-container{
         flex-wrap: wrap;
         gap: 15px;
@@ -374,8 +353,7 @@
         justify-content: space-evenly;
         order: 1;
     }
-
-    /* Category */
+   
     .category-bar{
         display: grid;
         grid-template-columns: repeat(5,1fr);
@@ -390,12 +368,9 @@
 }
 
 
-/* ===========================
-   Mobile (768px)
-=========================== */
 @media (max-width: 768px){
 
-    /* Search */
+  
     .search-container{
         flex-direction: column;
         align-items: stretch;
@@ -412,7 +387,6 @@
         gap: 15px;
     }
 
-    /* Category */
     .category-bar{
         grid-template-columns: repeat(4,1fr);
     }
@@ -427,10 +401,6 @@
     }
 }
 
-
-/* ===========================
-   Small Mobile (480px)
-=========================== */
 @media (max-width: 480px){
 
     .category-bar{
@@ -465,9 +435,6 @@
 
 
 
-
-/* Products */
-
 .products-wrapper {
     display: grid;
 
@@ -481,13 +448,11 @@
 }
 
 
-/* Hide Scrollbar */
 
 .products-wrapper::-webkit-scrollbar {
     display: none;
 }
 
-/* Card */
 
 .product-card {
     display: flex;
