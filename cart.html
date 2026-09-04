@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assent/flipkart.png">
+    <title>Shopping Cart | Flipkart.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="cart-header">
+        <div class="cart-header-container container">
+            <div class="cart-logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-bag-shopping" style="color: #ffe51f; font-size: 22px;"></i>
+                    <span>Flipkart</span>
+                </a>
+            </div>
+
+            <div class="cart-header-search">
+                <input type="text" placeholder="Search for products, brands and more">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="cart-header-user">
+                <i class="fa-regular fa-circle-user" style="font-size: 18px;"></i>
+                <span>My Account</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Main Content -->
+    <main class="cart-page-content container">
+        <div class="cart-grid">
+
+            <!-- Left: Cart Items & Actions -->
+            <div class="cart-left-col">
+
+                <!-- Address Strip -->
+                <div class="address-card">
+                    <div class="address-info">
+                        <small>Deliver to: <strong>Anant, 110001</strong></small>
+                        <span>Connaught Place, Central Delhi, New Delhi</span>
+                    </div>
+                    <button class="change-address-btn" onclick="alert('Change address modal or redirect')">Change</button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div class="cart-items-box">
+
+                    <!-- Item 1 -->
+                    <div class="cart-item" data-price="999" data-orig="2999">
+                        <div class="item-left">
+                            <img src="./assent/images1.jpg" alt="Wireless Earbuds">
+                            <div class="qty-control">
+                                <button class="qty-btn minus-btn">-</button>
+                                <span class="qty-val">1</span>
+                                <button class="qty-btn plus-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <h3 class="item-title">Wireless Bluetooth Earbuds with Deep Bass & ENC</h3>
+                            <p class="item-seller">Seller: RetailNet | <span>Flipkart Assured</span></p>
+                            <div class="item-pricing">
+                                <span class="current-price">₹999</span>
+                                <span class="original-price">₹2,999</span>
+                                <span class="discount-tag">66% Off</span>
+                            </div>
+                            <p class="delivery-note">Delivery by <span>Tomorrow, 11 PM</span> | Free Delivery</p>
+                            <div class="item-actions">
+                                <button class="item-action-btn">Save For Later</button>
+                                <button class="item-action-btn remove-btn">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item" data-price="1499" data-orig="4999">
+                        <div class="item-left">
+                            <img src="./assent/images2.jpg" alt="Smart Watch">
+                            <div class="qty-control">
+                                <button class="qty-btn minus-btn">-</button>
+                                <span class="qty-val">1</span>
+                                <button class="qty-btn plus-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <h3 class="item-title">Fitness Smart Watch with 1.83" HD Display, Bluetooth Calling</h3>
+                            <p class="item-seller">Seller: Flashstar Commerce | <span>Flipkart Assured</span></p>
+                            <div class="item-pricing">
+                                <span class="current-price">₹1,499</span>
+                                <span class="original-price">₹4,999</span>
+                                <span class="discount-tag">70% Off</span>
+                            </div>
+                            <p class="delivery-note">Delivery by <span>Friday, 7 PM</span> | Free Delivery</p>
+                            <div class="item-actions">
+                                <button class="item-action-btn">Save For Later</button>
+                                <button class="item-action-btn remove-btn">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Place Order Row -->
+                <div class="order-bar">
+                    <button class="place-order-btn" id="place-order-btn">Place Order</button>
+                </div>
+
+            </div>
+
+            <!-- Right: Price Breakdown -->
+            <div class="cart-right-col">
+                <div class="price-card">
+                    <h4 class="price-card-title">Price Details</h4>
+
+                    <div class="price-row">
+                        <span id="price-items-label">Price (2 items)</span>
+                        <span id="total-mrp">₹7,998</span>
+                    </div>
+
+                    <div class="price-row green">
+                        <span>Discount</span>
+                        <span id="total-discount">- ₹5,500</span>
+                    </div>
+
+                    <div class="price-row green">
+                        <span>Delivery Charges</span>
+                        <span>FREE</span>
+                    </div>
+
+                    <div class="total-row">
+                        <span>Total Amount</span>
+                        <span id="final-amount">₹2,498</span>
+                    </div>
+
+                    <p class="savings-badge">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span id="savings-text">You will save ₹5,500 on this order</span>
+                    </p>
+                </div>
+
+                <div class="trust-badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Safe and Secure Payments. Easy returns. 100% Authentic products.</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container bottom-content">
+                <span><i class="fa-solid fa-shield"></i> Safe &amp; Secure Payments</span>
+                <span><i class="fa-solid fa-rotate-left"></i> Easy Returns</span>
+                <span>© 2007-2026 Flipkart.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Separated JavaScript -->
+    <script src="cart.js"></script>
+</body>
+
+</html>
